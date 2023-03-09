@@ -1,16 +1,3 @@
-# BitmapFont Generator ActionScript3
-A powerful and flexible API to generate Bitmap Fonts
-
-![BitmapFont Generator ActionScript3](bitmap-font-generator.gif)
-
-A bitmap font is one that stores each glyph as an array of pixels (that is, a bitmap). It is less commonly known as a raster font or a pixel font. Bitmap fonts are simply collections of raster images of glyphs. For each variant of the font, there is a complete set of glyph images, with each set containing an image for each character. For example, if a font has three sizes, and any combination of bold and italic, then there must be 12 complete sets of images. The ActionScript BitmapFont Generator API provides a convinient and flexable facility to create such images. 
-The font generator API also have some utilities to ease the integration with the [Starling Framework](https://github.com/Gamua/Starling-Framework) (e.g. `RasterGlyphSheet` & `BitmapFontPreparator`). Also, some handy Unicode Intervals are provided to be used as a base to integrate your custome character ranges. The API is dependent upon [Rectangle Bin Pack](https://github.com/EhsanMarufi/Rectangle-Bin-Pack-AS3) (just another nibblesSoft package).
-
-Additionally, the repository includes a sample BitmapFont generated only from capital letters (A to Z) and numbers (0-9) using this API, demonstrating an optimal method for character arrangement:
-
-![BitmapFont Generator ActionScript3](sample/ArialBold_AZ09.png)
-
-```xml
 <?xml version="1.0"?>
 <font>
   <info face="Arial" size="30" bold="1" italic="0" charset="" unicode="1" stretchH="100" smooth="1" aa="1" padding="0,0,0,0" spacing="1,1" outline="0"/>
@@ -76,12 +63,3 @@ Additionally, the repository includes a sample BitmapFont generated only from ca
     <kerning first="70" second="65" amount="-1" />
   </kernings>
 </font>
-```
-
-A GlyphInspector UI is also provided with the repository to help with the details on each glyph.
-
-All the code is released to Public Domain. Patches and comments are welcome.
-It makes me happy to hear if someone finds the algorithms and the implementations useful.
-
-Ehsan Marufi<br />
-<sup>December 2016</sup>
